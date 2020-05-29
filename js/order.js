@@ -8,7 +8,7 @@ $(function() {
 
   for (i = 0; i < pizzas.length; ++i) {
     pizza = pizzas[i];
-    $('#pizzas').append('<div class="col-xs-6 col-md-4 pizza"><a href="#" title="Add to Order" class="thumbnail"><img src="img/' + pizza.image + '" alt=""><div class="caption text-center"><span class="name">' +  (i + 1) + '. ' + pizza.name + '</span> <kbd class="price">₹' + pizza.price.toFixed(2) + '</kbd></div></a></div>');
+    $('#pizzas').append('<div class="col-xs-6 col-md-4 pizza"><a href="#" title="Add to Order" class="thumbnail"><img src="./img/' + pizza.image + '" alt=""><div class="caption text-center"><span class="name">' +  (i + 1) + '. ' + pizza.name + '</span> <kbd class="price">₹' + pizza.price.toFixed(2) + '</kbd></div></a></div>');
   }
 
   function draw_order(pizzas) {
